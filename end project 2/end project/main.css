@@ -1,0 +1,1006 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+ --color1: #fff;
+ --color2: #000;
+ --color3: #6366f1;
+ --color4: #040532;
+ --color5:#7a7a7a;
+ --color6:#232d39;
+ --color7: #212529;
+}
+@font-face{
+    font-family: "poppins";
+    src: url(FONTS/Poppins-Bold.ttf);
+}
+/* nav bar style */
+div.section1 {
+   width: 100%;
+   height: 100%;
+   background-color: var(--color1); 
+}
+ div.section1 div.container{
+    height: 100%;
+    width: 100%;
+    
+} 
+div.section1 div.container nav{
+    height: 15%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 400px 3fr 1fr;
+    grid-template-rows: repeat(1,auto);
+    justify-content: center;
+    align-items: center;
+    position:fixed;
+    top:0;
+    background-color: var(--color1);
+    z-index: 1000;
+}
+ div.container nav h2{
+    height: 80px;
+    font-size: 32px;
+    color: var(--color2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row column;
+    font-weight: bolder;
+   font-family: "poppins";
+   color: var(--color6);
+}
+div.container nav h2 span{
+    color: var(--color3);
+font-weight: bolder;
+padding-left: 10px;
+}
+div.container nav ul.links{
+height: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-flow: nowrap row ;
+list-style: none;
+margin-left:80px ;
+transition: all 0.5s ease-in-out;
+}
+div.container nav ul.links li {
+    margin: 0px 25px;
+    font-size: 13px;
+    line-height: 40px;
+    text-transform: uppercase;
+    font-family: "poppins";
+}
+div.container nav ul.links li a {
+    text-decoration: none;
+    color: var(--color2);
+}
+div.container nav ul.links li :hover{
+ color: var(--color3);
+}
+div.container nav div.actions {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     font-size: 13px;
+     line-height: 20px;
+}
+div.container nav div.actions button{
+    height: 40px;
+    width: 80px;
+    outline: none;
+    border: none;
+    background-color: var(--color3);
+    color: var(--color1);
+    font-family: "poppins";
+}
+div.container nav div.actions button:hover{
+    color: var(--color2);
+}
+div.baricons{
+  display:flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-flow: wrap column;
+}
+div.navmoblieicon{
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: wrap column;
+  background-color: var(--color3);
+  border-radius: 5px;
+  cursor: pointer;
+}
+/* hero style */
+.hero {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  background-color: rgba(49, 47, 47, 0.6); 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero div.container{
+  width: 100%;
+  height: 100%;
+  margin: 0 0;
+}
+.video-background {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1;
+  object-fit: cover;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+
+.content-texts h2:nth-child(1) {
+  color: var(--color1); 
+    font-size: 18px;
+    line-height: 22px;
+    padding-bottom: 20px;
+    padding-top: 8%;
+    font-family: "poppins";
+    z-index: 1;
+  text-shadow: 1px 1px 3px rgba(43, 42, 42, 0.5);
+}
+.content-texts h2:nth-child(2){
+  padding-top: 30px;
+  font-size: 84px;
+  color: var(--color1);
+  line-height: 101px; 
+  padding: 0px 100px;
+  font-family: "poppins";
+  z-index: 1;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+.content-texts span {
+  font-weight: bold;
+  color:var(--color3)
+}
+
+.hero-button {
+  background-color: var(--color3);
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: all 0.3s ease;
+}
+
+.hero-button:hover {
+  background-color: var(--color3);
+  transform: translateY(-2px);
+}
+  
+
+.hero h2:nth-child(1){
+    color: var(--color1); 
+    font-size: 18px;
+    line-height: 22px;
+    padding-bottom: 20px;
+    padding-top: 8%;
+    font-family: "poppins";
+    z-index: 1;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+.hero h2:nth-child(2){
+ padding-top: 30px;
+ font-size: 84px;
+ color: var(--color1);
+ line-height: 101px; 
+ padding: 0px 100px;
+ font-family: "poppins";
+ z-index: 1;
+ text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+.hero h2 span{
+    color: var(--color3);
+}
+
+/* choose program style */
+div.section2 {
+    width: 100%;
+    height: 100%;
+}
+div.section2 div.container{
+    height: 100%;
+    width: 100%;
+    padding: 0px 20px;
+    margin-left: auto;
+    margin-right: auto; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: nowrap column;
+}
+div.section2 div.container h2 {
+    padding: 10px;
+    color: var(--color4);
+    font-size: 28px;
+    line-height: 34px;
+    font-family: "poppins";
+    font-weight:bolder;
+    margin-top: 5%;
+}
+div.section2 div.container h2 span{
+    color: var(--color3);
+}
+div.section2 div.container p{
+    font-size: 14px;
+    line-height: 25px;
+    color: var(--color5);
+    text-align: center;
+    padding: 10px;
+    font-family: "poppins";
+}
+
+ div.boxs{
+    width:100% ;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(3,185px);
+    gap: 7px;
+    margin: 0px 15px;
+ }
+ div.boxs div.box{
+    justify-content: center;
+    align-items: center;
+    /* background-color: var(--color4); */
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+   gap:15px;
+   margin: 0px 50px;
+   display: flex;
+   justify-content: center;
+   align-content: center;
+ }
+ div.boxs div.box h2{
+    font-size: 19px;
+    line-height: 23px;
+    color: var(--color6);
+    padding-bottom: 8px;
+    font-family: "poppins";
+    font-weight: bolder;
+ }
+ div.boxs div.box p{
+    font-size: 14px;
+    line-height: 25px;
+    color: var(--color5);
+    font-family: "poppins";
+ }
+ div.boxs div.box div.info button {
+ border: none;
+ outline: none;
+ padding: 2px;
+ color: var(--color3);
+ background: var(--color1);
+ font-size: 13px;
+ line-height: 20px;
+ text-transform: uppercase;
+ cursor: pointer;
+ font-family: "poppins";
+ }
+ /*Don’t think, begin today! STYLE */
+ section.today {
+  width: 100%;
+  height: 100%;
+  padding: 0 20px;
+  background-image: url("imgprt3.jpg");
+ }
+
+ section.today div.container div.content{
+    width: 100%;
+    height: 100%;
+    padding: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    margin: 10% 0px;
+ }
+ section.today div.container div.content h2{
+    font-size: 36px;
+    line-height: 43px;
+    color:var(--color1);
+    text-transform: uppercase;
+    font-family: "poppins";
+    font-weight: bolder;
+ }
+  section.today div.container div.content h2 span{
+  color: var(--color3);
+ }
+ section.today div.container div.content p{
+    font-size: 16px;
+    line-height: 25px;
+    color: var(--color1);
+    text-align: center;
+    padding: 10px;
+    font-family: "poppins";
+ }
+ section.today div.container div.content button {
+    border: none;
+    outline: none;
+    width: 25%;
+    height: 45px;
+    color: var(--color1);
+    font-size: 15px;
+    line-height: 23px;
+    cursor: pointer;
+    background-color: var(--color3);
+    margin: 8px;
+    font-family: "poppins";
+ }
+ /* our classes style */
+ section.containerthree{
+    width: 100%;
+    height: 100%;
+  
+ }
+ section.containerthree div.container{
+    height: 100%;
+    width: 100%;
+    padding: 0px 20px;
+    margin-left: auto;
+    margin-right: auto; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: nowrap column;
+ }
+ section.containerthree div.container h2{
+    padding: 10px;
+    color: var(--color4);
+    font-size: 28px;
+    line-height: 34px;
+    font-weight: bolder;
+    font-family: "poppins";
+ }
+ section.containerthree div.container h2 span{
+    color: var(--color3);
+ }
+ section.containerthree div.container p{
+    font-size: 14px;
+    line-height: 25px;
+    color: var(--color5);
+    text-align: center;
+    padding: 10px;
+    font-family: "poppins";
+ }
+ div.container{
+   width: 100%;
+   height: 100%;
+ }
+  div.parts{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 500px 750px;
+    margin-bottom: 8%;
+ }
+  div.container div.parts div.partleft {
+    width: 100%;
+ }
+ div.container div.parts div.partleft div.boxs{
+   width: calc(100%/4);
+   display: block;
+   display: grid;
+   grid-template-rows: repeat(4,1fr);
+   grid-template-columns: repeat(1,1fr);
+   padding-bottom: 50%;
+ }
+ div.container div.parts div.partleft div.box{
+   width: 400px;
+   height: 90px;
+   margin-top: 10px;
+   background-color: var(--color1);
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+   cursor: pointer;
+   border:2px solid var(--color1);
+ }
+ div.container div.parts div.partleft div.box h2{
+   font-size: 19px;
+   line-height: 29px;
+   font-family: "poppins";
+   font-weight: bolder;
+ }
+ div.container div.parts div.partleft div.box h2:hover{
+   box-shadow: var(--color1);
+   color: var(--color3);
+ }
+ div.container div.boxs button{
+   width: 400px;
+   height: 70px;
+   margin-left: 55px;
+   font-size: 19px;
+   line-height: 29px;
+   color: var(--color1);
+   background-color: var(--color3);
+   border: none;
+   border-radius: 8px;
+   font-family: "poppins";
+   cursor: pointer;
+ }
+ div.container div.parts div.partright{
+   width: 100%;
+   height: 100%;
+   margin-top: 30px;
+ } div.container div.parts div.partright img{
+   width: 100%;
+   height: 100%;
+   border-radius: 8px;
+   border: none;
+ }
+ div.container div.parts div.partright h2{
+   color: var(--color6);
+   font-size: 23px;
+   line-height: 29px;
+   padding: 20px;
+   font-weight: bolder;
+ }
+ div.container div.parts div.partright p{
+   font-size: 14px;
+   line-height: 25px;
+   color: var(--color5);
+ }
+ div.container div.parts div.partright button{
+   width: 170px;
+   height: 50px;
+   background-color: var(--color3);
+   color: var(--color1);
+   font-size: 15px;
+   line-height: 23px;
+   font-family: "poppins";
+   margin-top: 30px;
+   margin-bottom: 40px;
+   cursor: pointer;
+   border: none;
+ }
+ /* class schedule style */
+ section.sectionfour{
+  width: 100%;
+  height: 100%;
+  margin-left: 0%;
+  margin-right: 0%;
+   display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+  margin-bottom: 10%;
+  padding-top: 70px; 
+  background-color: var(--color3);
+  background-image: url(imgp4.jpg);
+ }
+ section.sectionfour div.container{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+  margin-bottom: 10%;
+  padding-top: 70px;
+  margin-left: 0%;
+  margin-right: 0%;
+  }
+ 
+ section.sectionfour div.container h2{
+  font-size: 28px;
+  line-height: 34px;
+  color: var(--color1);
+  font-family: "poppins";
+  padding: 20px;
+  font-weight: bolder;
+ }
+ section.sectionfour div.container h2 span {
+ color: var(--color3);
+ }
+ section.sectionfour div.container p{
+  font-size: 14px;
+  font-family: "poppins";
+  line-height: 25px;
+  color: var(--color2);
+  text-align: center;
+  padding-top: 10px;
+  color: var(--color1);
+ }
+ section.sectionfour ul{
+ padding-top: 60px;
+ }
+ section.sectionfour  ul li{
+list-style: none;
+ display: inline;
+ padding-left: 10px;
+ padding-top: 70px;
+ font-size: 16px;
+ line-height: 24px;
+ font-family: "poppins";
+ color: var(--color1);
+ cursor: pointer;
+ 
+ }
+ section.sectionfour ul li:hover{
+  color: var(--color3);
+ }
+ section.sectionfour table{
+  width: 100%;
+ height: 100%;
+ border-collapse: collapse;
+ margin-top: 40px;
+ margin-bottom: 10%;
+ }
+ section.sectionfour table tr{
+  padding: 20px;
+  border: 1px solid var(--color1);
+ }
+ section.sectionfour table td{
+  border: 1px solid var(--color1);
+  padding: 50px 60px;
+  color: var(--color1);
+  font-family: "poppins";
+ }
+ /* expert trainings style*/
+ section.sectionfive{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+ }
+ section.sectionfive div.titles{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap; 
+ }
+ section.sectionfive div.titles h2{
+  font-size: 28px;
+  line-height: 34px;
+  color: var(--color4);
+  padding: 10px;  
+  font-family: "poppins";
+  font-weight: bolder;
+ }
+ section.sectionfive div.titles p{
+  font-size: 14px;
+  line-height: 25px;
+  text-align: center;
+  color: var(--color5);
+  padding: 20px;
+  font-family: "poppins";
+ }
+ section.sectionfive div.boxs{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 5%;
+ }
+ section.sectionfive div.boxs div.box {
+  width: calc(85%/3);
+  height: 100%;
+  border: 10px solid var(--color1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1%;
+ }
+ section.sectionfive div.boxs img{
+  width: 340px;
+  height: 300px;
+  padding: 30px 50px;
+  border-radius: 15%;
+ }
+ section.sectionfive div.boxs div.box h2{
+  font-size: 13px;
+  line-height: 20px;
+  font-family: "poppins";
+  color: var(--color3);
+  padding: 10px 50px;
+ }
+ section.sectionfive div.boxs div.box h3{
+  font-size: 19px;
+  line-height: 23px;
+  padding: 5px 50px;
+  color: var(--color4);
+  font-family: "poppins";
+  font-weight: bold;
+ }
+ section.sectionfive div.boxs div.box p{
+  font-size: 14px;
+  line-height: 25px;
+  padding: 10px 50px;
+  color: var(--color5);
+  font-family: "poppins";
+ }
+ section.sectionfive div.boxs div.box div.icon{
+  padding: 10px 60px;
+  font-size: 22px;
+ }
+ section.sectionfive div.boxs div.box div.icon:hover{
+  color: var(--color3);
+ }
+ /* LAST SECYION STYLE */
+ section.Lastsection div.container{
+  width: 100%;
+  height: 100%;
+ }
+ section.Lastsection div.container div.parts{
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 600px 400px;
+  gap: 12%;
+ }
+ .map-section {
+  padding: 80px 0;
+  background-color: var(--color1);
+}
+.map-container {
+  width: 90%;
+  max-width: 1200px;
+  margin-top: 20%;
+  margin-left: 5%;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+.map-iframe {
+  width: 100%;
+  height: 500px;
+  border: 0;
+  
+}
+ section.Lastsection div.container div.parts div.right{
+  margin-top: 50%;
+  flex-flow: row wrap;
+ }
+ section.Lastsection div.container div.parts div.right #name{
+  width: 40%;
+  height: 8%;
+  margin-bottom: 8%;
+ }
+ section.Lastsection div.container div.parts div.right #email{
+  width: 40%;
+  height: 8%;
+ margin-left: 15.5%;
+ }
+ section.Lastsection div.container div.parts div.right #Subject{
+ width: 100%;
+ height: 8%;
+ margin-bottom: 7%;
+ margin-top: 7%;
+ }
+ section.Lastsection div.container div.parts div.right #Messages{
+  width: 100%;
+  height: 30%;
+ }
+ section.Lastsection div.container div.parts div.right button{
+  width: 30%;
+  height: 10%;
+  background-color: var(--color3);
+  color: var(--color1);
+  border: none;
+  outline: none;
+  margin-top: 10%;
+  cursor: pointer;
+ }
+
+
+
+ @media (min-width: 350px) and ( max-width: 480px){
+  .container{
+      max-width: 400px;
+  }
+  /* nav section */
+  div.container nav ul.links{
+    display: none;
+  }
+  div.container nav div.actions{
+    display: none;
+  }
+  div.section1 div.container nav{
+    grid-template-columns: 400px  1fr;
+  }
+  /* hero */
+  .hero-content div.content-texts h2:nth-child(2){
+    font-size: 14px;
+  }
+  .hero-content div.content-texts h2:nth-child(2){
+   font-size: 70px;
+  }
+  /* choose program responsive */
+  div.section2 div.container h2{
+    font-size: 24px;
+    line-height: 30px;
+  }
+  div.boxs{
+    grid-template-columns: repeat(1,1fr);
+  }
+  div.boxs div.box h2{
+    font-size: 15px;
+  }
+  div.boxs div.box p{
+    font-size: 11px;
+  }
+   /* don't think begin today respon*/
+   section.today div.container div.content{
+    flex-flow: wrap column;
+  }
+  section.today div.container div.content h2{
+    font-size: 32px;
+    line-height: 39px;
+  }
+  section.today div.container div.content p{
+    font-size: 12px;
+    line-height: 21px;
+  }
+  section.today div.container div.content button{
+    width: 25%;
+    height: 50px;
+    font-size: 11px;
+    line-height: 19px;
+  } 
+  /* our classes respon*/
+  section.containerthree div.container h2{
+    font-size: 24px;
+  }
+  div.parts{
+    grid-template-columns: repeat(1,1fr);
+    margin-bottom: 0%;
+    width: calc(70%/2);
+    padding: 0;
+  }
+  div.container div.parts div.partleft div.boxs div.box {
+    width: 300px;
+    height: 70px;
+    margin-top: 10px; 
+  }
+  div.container div.boxs button{
+    width: 300px;
+    height: 50px;
+    font-size: 17px;
+  }
+  div.container div.parts div.partleft div.boxs div.box h2{
+    font-size: 17px;
+    line-height: 25px;
+  }
+  /* class schedule respon */
+  section.sectionfour div.container h2{
+    font-size: 21px;
+    line-height: 30px;
+    padding: 15px;
+}
+section.sectionfour div.container p{
+  font-size: 10px;
+  line-height: 20px;
+}
+section.sectionfour  ul li{
+  padding-left: 5px;
+ padding-top: 40px;
+ font-size: 12px;
+ line-height: 20px;
+}
+section.sectionfour table{
+  display: block;
+ border-collapse: collapse;
+ margin-top: 30px;
+ margin-bottom: 5%;
+ }
+section.sectionfour table td{
+  display: block;
+    padding: 10px 15px;
+    border: none;
+    text-align: left;
+    position: relative;
+}
+ /* expert trainings */
+ section.sectionfive div.boxs{
+  margin: 0; 
+  flex-direction: column; 
+ }
+ section.sectionfive div.boxs div.box{
+  width: 90%; 
+  margin: 10px 0;
+  border-width: 6px;
+ }
+ section.sectionfive div.boxs img{
+  width: 100%;
+    height: auto;
+    max-height: 250px;
+    padding: 15px 20px;
+    border-radius: 10%;
+ }
+ /* last section respon*/
+ section.Lastsection div.container div.parts{
+  grid-template-columns: repeat(1,1fr);
+  gap: 1%;
+ }
+ }
+@media (min-width: 481px) and ( max-width: 767px){
+  .container{
+      max-width: 700px;
+  }
+      /* nav section*/
+  div.container nav ul.links{
+    display: none;
+  }
+  div.container nav div.actions{
+    display: none;
+  }
+  div.section1 div.container nav{
+    grid-template-columns: 400px  1fr;
+  }
+   /* choose program responsive */
+   div.section2 div.container h2{
+    font-size: 24px;
+    line-height: 30px;
+  }
+  div.boxs{
+    grid-template-columns: repeat(1,1fr);
+    gap: 4px;
+  }
+  div.boxs div.box h2{
+    font-size: 16px;
+  }
+  div.boxs div.box p{
+    font-size: 12px;
+    padding-bottom: 15px;
+  }
+  div.boxs div.box p{
+    font-size: 11px;
+    line-height: 20px;
+  }
+  div.boxs div.box h2{
+    padding-bottom: 10px;
+    font-size: 12px;
+    line-height: 18px;
+    padding-top: 30px;
+  }
+  /* don't think begin today respon*/
+  section.today div.container div.content{
+    flex-flow: wrap column;
+  }
+  section.today div.container div.content h2{
+    font-size: 32px;
+    line-height: 39px;
+  }
+  section.today div.container div.content p{
+    font-size: 12px;
+    line-height: 21px;
+  }
+  section.today div.container div.content button{
+    width: 25%;
+    height: 50px;
+    font-size: 11px;
+    line-height: 19px;
+  } 
+  /* our classes respon*/
+  section.containerthree div.container h2{
+    font-size: 24px;
+  }
+  div.parts{
+    grid-template-columns:400px 450px;
+    margin-bottom: 0%;
+    width: calc(90%/2);
+    padding: 0;
+  }
+  div.container div.parts div.partleft div.boxs div.box {
+    width: 270px;
+    height: 60px;
+    margin-top: 10px; 
+  }
+  div.container div.boxs button{
+    width: 250px;
+    height: 50px;
+    font-size: 20px;
+  }
+  div.container div.parts div.partleft div.boxs div.box h2{
+    font-size: 20px;
+    line-height: 25px;
+  }
+  /* class schedule respon*/
+  section.sectionfour table{
+    display: block;
+    margin: 20px 0;
+    border: none;
+  } 
+  section.sectionfour table tr{
+    display: block;
+    margin-bottom: 15px;
+    border: 1px solid var(--color1);
+    padding: 10px;
+  }
+  section.sectionfour table td{
+    display: block;
+    padding: 8px 12px;
+    border: none;
+    text-align: left;
+    font-size: 0.85em;
+  } 
+  /* expert trainings */
+ section.sectionfive div.boxs{
+  margin: 0 3%;
+ }
+ section.sectionfive div.boxs div.box{
+  width: calc(94% / 2);
+  margin: 1% 3%;
+  border-width: 8px;
+ }
+ section.sectionfive div.boxs img{
+  width: 280px;
+    height: 250px;
+    padding: 20px 30px;
+ }
+ /* last section respon*/
+ section.Lastsection div.container div.parts{
+  grid-template-columns: 450px 250px;
+  gap: 4%;
+ }
+}
+@media (min-width:  767px) and ( max-width: 992px){
+  .container{
+      max-width: 900px;
+  }
+  /* baricons */
+  div.baricons{
+    display: none;
+  }
+ 
+}
+@media (min-width:  992px) and ( max-width: 1200px){
+  .container{
+      max-width: 1020px;
+  }
+  /* baricons */
+  div.baricons{
+    display: none;
+  }
+} 
+@media (min-width:  1200px) and ( max-width: 1400px){
+  .container{
+      max-width: 1200px;
+}
+/* baricons */
+div.baricons{
+  display: none;
+}
+}
+@media (min-width:1400px){
+  .container{
+      max-width: 1200px;  
+  }
+  /* baricons */
+  div.baricons{
+    display: none;
+  }
+}
